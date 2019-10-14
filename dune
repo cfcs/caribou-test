@@ -1,0 +1,13 @@
+(library
+  (name caribou)
+  (public_name caribou)
+  (modules caribou tty)
+  (libraries notty.lwt lwt str )
+)
+
+(executable
+  (name simple)
+  (modules simple)
+  (public_name simple)
+  (libraries caribou notty)
+)
